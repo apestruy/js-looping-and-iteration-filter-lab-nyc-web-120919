@@ -1,9 +1,6 @@
-function findMatching(drivers, name) {
-  return drivers.filter(function (driver) { 
-    return 
-    name.toLowerCase() === driver.toLowerCase();
-  })
-}
+function findMatching (list, name) {
+  return list.filter(function (driverName) {	  return list.filter(function (driverName) {
+    return driverName.toLowerCase() === name.toLowerCase();	    return driverName.toLowerCase() === name.toLowerCase();
 
 function fuzzyMatch(drivers, letter) {
   return drivers.filter(function (driver) { return
