@@ -9,3 +9,9 @@ function fuzzyMatch(drivers, letter) {
     return driver.startsWith(letter);
   })
 }
+
+function matchName(drivers, name) {
+  return drivers.filter(function (driver) {
+    return driver.name === name 
+  })
+}
